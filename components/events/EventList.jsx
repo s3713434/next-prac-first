@@ -3,7 +3,7 @@ import EventItem from './EventItem'
 export default function EventList(props) {
   const { items } = props
   return (
-    <ul className='max-w-4xl mx-auto space-y-6'>
+    <ul className='max-w-3xl flex flex-col flex-wrap'>
       {items.map((event) => (
         <EventItem
           key={event.id}
